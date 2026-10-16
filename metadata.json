@@ -1,0 +1,6 @@
+{
+  "name": "Cutie Booth 🎀",
+  "description": "A cute and romantic Korean-style online photobooth with live pastel filters, photo strips, stickers, and gallery.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

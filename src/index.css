@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --font-hand: "Gaegu", cursive, sans-serif;
+  --font-cute: "Shantell Sans", cursive, sans-serif;
+  --font-body: "Nunito", sans-serif;
+}
+
+/* Custom romantic background and scrollbar */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: var(--font-body);
+}
+
+.font-hand {
+  font-family: var(--font-hand);
+}
+
+.font-cute {
+  font-family: var(--font-cute);
+}
+
+/* Subtle heart pattern background */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(244, 114, 182, 0.15) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+.bg-polka-pattern {
+  background-image: radial-gradient(rgba(251, 191, 216, 0.4) 2px, transparent 2px);
+  background-size: 18px 18px;
+}
+
+/* Flash animation */
+@keyframes flash-animation {
+  0% { opacity: 0.9; }
+  100% { opacity: 0; }
+}
+
+.camera-flash {
+  animation: flash-animation 0.35s ease-out forwards;
+}
+
+/* Float animations */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(3deg); }
+}
+
+@keyframes float-reverse {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(8px) rotate(-3deg); }
+}
+
+@keyframes pulse-gentle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-float {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 4.5s ease-in-out infinite;
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 2.5s ease-in-out infinite;
+}
+
+/* Custom cute scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF0F5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #F4A5BE;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E87A9A;
+}
